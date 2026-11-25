@@ -43,7 +43,7 @@
         "Na západě pokoj 2.02 a předsíň / šatna 2.03, na východě pokoj 2.04 a koupelna 2.05.",
         "Půda slouží jako úložný prostor nebo na spaní (≥ 1,9 m jen v pásu asi 1,5 m u hřebene).",
         "Schodiště z 1.NP do patra v této variantě není.",
-        "Krov: nový strop +5,53 je o 8 cm výš než spodek vazných trámů (+5,45). Trámy x ≈ 8,1 a 16,0 by zůstaly vidět v pokojích, trám x ≈ 12,1 vede obývákem 2,42 m nad podlahou. Je nutné strop snížit, nebo trámy nahradit."
+        "Krov: vazné trámy zůstávají (v podhledu drážka, pod trámem 2,42 m). Trám x ≈ 12,1, který by křížil schodiště na půdu, nahrazuje ocelové táhlo pod kleštinou (+7,80). Nutný statik."
       ],
       "vykresy": "bim/varianty/V1/vykresy",
       "mistnosti": "analysis/mistnosti_V1.json",
@@ -70,7 +70,7 @@
         "Dvě vřetenová schodiště D 1,50 v předsíních 2.03 a 2.05.",
         "Zadní trakt pod vikýři: místnost, koupelna, technická místnost, chodba a schodiště z 1.NP.",
         "8 střešních oken 78 × 118 cm.",
-        "Krov: vazné trámy jsou 2,42 m nad podlahou 2.NP, nový strop +5,53 jimi prochází. Zadní vaznice (+4,64) je jen 1,61 m nad podlahou zadního traktu a sloupky stojí v koupelně a v technické místnosti, takže pod vikýři se musí nahradit."
+        "Krov: vazné trámy x ≈ 4,0 / 12,1 / 19,9 zůstávají (pod trámem 2,42 m). Trámy nad točitými schody (x ≈ 8,1 a 16,0) nahrazují ocelová táhla (+7,80). Zadní vaznice se ruší, pod čely vikýřů jsou nové výměny."
       ],
       "vykresy": "bim/varianty/V2/vykresy",
       "mistnosti": "analysis/mistnosti_V2.json",
@@ -106,7 +106,7 @@
         "Noční část: ložnice 2.02, hala se schody, šatna, koupelna, prádelna.",
         "Podkroví: pokoj 3.01 přes celou západní část (vnitřní okno do obýváku), na východě půda (sklad) se skládacími schody.",
         "9 střešních oken 78 × 118 cm, vikýře nad zadním traktem.",
-        "Krov: vazné trámy jsou 2,42 m nad podlahou 2.NP, nový strop +5,53 jimi prochází. Zadní vaznice (+4,64) je jen 1,61 m nad podlahou zadního traktu a sloupky stojí v koupelně a v prádelně, takže pod vikýři se musí nahradit."
+        "Krov: všechny vazné trámy zůstávají (v podhledu drážka, pod trámem 2,42 m). Zadní vaznice se sloupky se ruší, pod čely vikýřů jsou nové výměny."
       ],
       "vykresy": "bim/varianty/V3/vykresy",
       "mistnosti": "analysis/mistnosti_V3.json",
@@ -142,7 +142,7 @@
         "Dvě koupelny (9,3 a 6,5 m²) a prádelna s technikou jsou na jedné stoupačce nad WC v 1.NP.",
         "Rovný strop 2,50 m, půda zůstává studená (sklad, skládací schody), zatepluje se jen strop.",
         "Okna do ulice v 2.NP jsou vyšší (0,90 × 1,52 m), ve vikýřích jsou velká okna do dvora.",
-        "Krov: rovný strop +5,53 je o 8 cm výš než spodek vazných trámů (+5,45). Strop dát pod trámy (světlá výška 2,42 m), nebo trámy zapustit. Zadní vaznice (+4,64) je 1,61 m nad podlahou zadního traktu a sloupky stojí v koupelně 1 a v prádelně, takže pod vikýři se musí nahradit."
+        "Krov: všechny vazné trámy zůstávají a nesou rovný strop (drážka v podhledu, pod trámem 2,42 m). Zadní vaznice se sloupky se ruší, pod čely vikýřů jsou nové výměny."
       ],
       "vykresy": "bim/varianty/V4/vykresy",
       "mistnosti": "analysis/mistnosti_V4.json",
@@ -178,7 +178,7 @@
         "Zadní trakt má podlahu na stávajícím stropě (+2,71), bez vikýřů. Jsou v něm 2 pokoje se 3 střešními okny, koupelna 11,2 m², technická místnost s WC a chodba se schodištěm z 1.NP.",
         "Pokoj nad průjezdem (24,4 m²) je ve výkresu jako ložnice. Dostane novou podlahu na úrovni 2.NP a dveře z chodby.",
         "K ověření: statika krovu po odstranění stropu, rozdíl podlah 0,32 m mezi trakty, nízký zadní trakt (u zadní stěny asi 1,2 m), světlo v obýváku.",
-        "Krov: vazné trámy zůstávají a vedou otevřeným prostorem 2,42 m nad podlahou (obývák, kuchyně, pracovna, chodba, pokoj nad průjezdem). Zadní vaznice je jen 1,93 m nad podlahou zadního traktu a vede všemi zadními místnostmi, sloupky stojí v pokoji 2.13 a v technické místnosti."
+        "Krov: vazné trámy zůstávají v otevřeném prostoru 2,42 m nad podlahou. Zadní vaznice zůstává (1,93 m nad podlahou, v nízkém pásu u zadní stěny), její sloupky jsou přesunuté do příček."
       ],
       "vykresy": "bim/varianty/V5/vykresy",
       "mistnosti": "analysis/mistnosti_V5.json",
