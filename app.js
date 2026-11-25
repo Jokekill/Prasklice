@@ -166,7 +166,7 @@
           <p class="lead">${esc(v.shrnuti || "")}</p>
           ${v.body && v.body.length ? `<ul>${v.body.map(b => `<li>${esc(b)}</li>`).join("")}</ul>` : ""}
         </div>
-        <div class="ext">${extItems.map((e, i) => `<figure>${shot(gExt, i, e.src, e.title)}<figcaption>${esc(e.title.split("– ")[1] || e.title)}</figcaption></figure>`).join("")}</div>
+        <div class="ext">${extItems.map((e, i) => `<figure>${shot(gExt, i, e.src, e.title)}<figcaption>${esc(e.title.split(" – ").pop())}</figcaption></figure>`).join("")}</div>
       </div>
       <section id="patra">
         <div class="sec-h"><h2>Patra</h2>

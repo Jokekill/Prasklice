@@ -159,6 +159,37 @@
       "blend": "blender/Prasklice_V4_rekonstrukce.blend",
       "kolekce": "V4_Rekonstrukce",
       "kolekce_navic": []
+    },
+    {
+      "id": "V5",
+      "nazev": "Varianta 5 – Klára",
+      "kratky": "V5 Klára",
+      "typ": "studie",
+      "datum": "25. 11. 2026",
+      "shrnuti": "Podle výkresu od Kláry: patro bez stropu otevřené až do krovu, obývák s kuchyní přes 50 m² a dva pokoje s pracovnou do ulice. V zadním traktu pod pultovou střechou jsou pokoje se střešními okny, koupelna, technická místnost a schodiště z přízemí.",
+      "body": [
+        "Hliněný strop se bourá, hlavní trakt je otevřený do krovu (u fasády asi 3,0 m, pod hřebenem 5,3 m).",
+        "Do ulice: pokoj 12,6 m², pracovna 10,6 m², obývák 19,8 m² a kuchyně s jídelnou 30,6 m² (obývák s kuchyní jsou jeden prostor). Podél podélné zdi je chodba se skříněmi.",
+        "Zadní trakt má podlahu na stávajícím stropě (+2,71), bez vikýřů. Jsou v něm 2 pokoje se 3 střešními okny, koupelna 11,2 m², technická místnost s WC a chodba se schodištěm z 1.NP.",
+        "Pokoj nad průjezdem (24,4 m²) je ve výkresu jako ložnice. Dostane novou podlahu na úrovni 2.NP a dveře z chodby.",
+        "K ověření: statika krovu po odstranění stropu, rozdíl podlah 0,32 m mezi trakty, nízký zadní trakt (u zadní stěny asi 1,2 m), světlo v obýváku."
+      ],
+      "vykresy": "bim/varianty/V5/vykresy",
+      "mistnosti": "analysis/mistnosti_V5.json",
+      "poznamky": "bim/varianty/V5/V5_poznamky.md",
+      "pohledy": [
+        [
+          "bim/varianty/V5/V5_pohled_kuchyne_obyvak.png",
+          "Kuchyně a obývák otevřené do krovu"
+        ],
+        [
+          "bim/varianty/V5/V5_pohled_pokoj_zadni.png",
+          "Pokoj 2.07 v zadním traktu se střešními okny"
+        ]
+      ],
+      "blend": "blender/Prasklice_V5_rekonstrukce.blend",
+      "kolekce": "V5_Rekonstrukce",
+      "kolekce_navic": []
     }
   ]
 }
