@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RD Prasklice – varianty rekonstrukce</title>
+<link rel="stylesheet" href="styl.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 15 16 5l12 10v13H4z' fill='%23b5532f'/%3E%3Cpath d='M13 28v-8h6v8' fill='%23f6f4ef'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#prehled">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 15 16 5l12 10v13H4z"/><path class="door" d="M13 28v-8h6v8"/></svg>
+      <span><strong id="projekt">RD Prasklice</strong><small id="podtitul"></small></span>
+    </a>
+    <nav id="nav" aria-label="Verze"></nav>
+  </div>
+</header>
+<main id="app"></main>
+<footer class="foot">
+  <span id="gen"></span>
+  <span>Studie dispozic k diskusi – nejde o projektovou dokumentaci. Výšky od podlahy přízemí (±0,000).</span>
+</footer>
+
+<div id="lb" class="lb" hidden>
+  <div class="lb-bar">
+    <div class="lb-cap"><strong id="lb-title"></strong><span id="lb-sub"></span></div>
+    <div class="lb-tools">
+      <button data-act="out" title="Oddálit (−)">−</button>
+      <button data-act="fit" title="Celý výkres (0)">Celé</button>
+      <button data-act="in" title="Přiblížit (+)">+</button>
+      <a id="lb-pdf" class="btn" target="_blank" rel="noopener">PDF</a>
+      <button data-act="close" class="lb-close" title="Zavřít (Esc)">✕</button>
+    </div>
+  </div>
+  <div class="lb-stage" id="lb-stage"><img id="lb-img" alt=""></div>
+  <button class="lb-nav prev" data-act="prev" title="Předchozí (←)">‹</button>
+  <button class="lb-nav next" data-act="next" title="Další (→)">›</button>
+  <div class="lb-count" id="lb-count"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

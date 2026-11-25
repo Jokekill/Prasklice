@@ -1,0 +1,100 @@
+{
+  "projekt": "RD Prasklice",
+  "podtitul": "Rekonstrukce patra a podkroví – přehled variant",
+  "verze": [
+    {
+      "id": "stav",
+      "nazev": "Současný stav",
+      "kratky": "Stav",
+      "typ": "zaměření",
+      "datum": "24. 11. 2026",
+      "shrnuti": "Model domu podle laserového skenu. Patro je jeden velký prostor pod hliněným stropem, půda nad ním je nevyužitá.",
+      "body": [
+        "Přízemí: pokoje A, B, D, chodba a pět místností v zadním traktu, průjezd / garáž a sklep.",
+        "2.NP: jeden prostor 2.01 se světlou výškou asi 2,19 m pod hliněným stropem.",
+        "Půda: podlaha +5,32, pod hřebenem asi 2,98 m.",
+        "Nad zadním traktem je nízká pultová střecha."
+      ],
+      "vykresy": "bim/vykresy",
+      "mistnosti": "analysis/mistnosti.json",
+      "poznamky": null,
+      "pohledy": [],
+      "blend": "blender/Prasklice_bim.blend",
+      "kolekce": "Stavajici_stav",
+      "kolekce_navic": ["Objekt_k_demolici"]
+    },
+    {
+      "id": "V1",
+      "nazev": "Varianta 1",
+      "kratky": "V1",
+      "typ": "studie",
+      "datum": "24. 11. 2026",
+      "shrnuti": "Obývák s kuchyní otevřený do krovu, přes něj lávka pod hřebenem mezi západní a východní půdou. Schodiště na půdu je v obýváku.",
+      "body": [
+        "Hliněný strop nad 2.NP se bourá, nový strop je o 0,43 m výš (místnosti 2.NP mají 2,50 m).",
+        "2.01 kuchyň + obývák (31,6 m²) do krovu, pod hřebenem 5,27 m.",
+        "Na západě pokoj 2.02 a předsíň / šatna 2.03, na východě pokoj 2.04 a koupelna 2.05.",
+        "Půda slouží jako úložný prostor nebo na spaní (≥ 1,9 m jen v pásu asi 1,5 m u hřebene).",
+        "Schodiště z 1.NP do patra v této variantě není."
+      ],
+      "vykresy": "bim/varianty/V1/vykresy",
+      "mistnosti": "analysis/mistnosti_V1.json",
+      "poznamky": "bim/varianty/V1/V1_poznamky.md",
+      "pohledy": [["bim/varianty/V1/V1_pohled_obyvak.png", "Obývák s lávkou pod hřebenem"]],
+      "blend": "blender/Prasklice_V1_rekonstrukce.blend",
+      "kolekce": "V1_Rekonstrukce",
+      "kolekce_navic": []
+    },
+    {
+      "id": "V2",
+      "nazev": "Varianta 2",
+      "kratky": "V2",
+      "typ": "studie",
+      "datum": "25. 11. 2026",
+      "shrnuti": "Obývák do krovu bez lávky. U štítů jsou podkrovní pokoje, podél volného prostoru ochozy. Na každý ochoz vedou točité schody. Nad zadním traktem jsou vikýře a nové místnosti, schodiště z 1.NP je v zadní východní místnosti.",
+      "body": [
+        "Podkroví: pokoj 3.01 (západ, 18,8 m²) a menší pokoj 3.04 (východ, 14,6 m²), ochozy 3.02 a 3.03.",
+        "Dvě vřetenová schodiště D 1,50 v předsíních 2.03 a 2.05.",
+        "Zadní trakt pod vikýři: místnost, koupelna, technická místnost, chodba a schodiště z 1.NP.",
+        "8 střešních oken 78 × 118 cm."
+      ],
+      "vykresy": "bim/varianty/V2/vykresy",
+      "mistnosti": "analysis/mistnosti_V2.json",
+      "poznamky": "bim/varianty/V2/V2_poznamky.md",
+      "pohledy": [
+        ["bim/varianty/V2/V2_pohled_obyvak.png", "Obývák do krovu"],
+        ["bim/varianty/V2/V2_pohled_ochoz_zapad.png", "Ochoz a podkroví z obýváku"],
+        ["bim/varianty/V2/V2_pohled_podkrovi_zapad.png", "Vstup do západního podkrovního pokoje"]
+      ],
+      "blend": "blender/Prasklice_V2_rekonstrukce.blend",
+      "kolekce": "V2_Rekonstrukce",
+      "kolekce_navic": []
+    },
+    {
+      "id": "V3",
+      "nazev": "Varianta 3",
+      "kratky": "V3",
+      "typ": "studie",
+      "datum": "25. 11. 2026",
+      "shrnuti": "Jasně oddělené zóny. Ze schodů z 1.NP se vchází rovnou do vstupní haly, u ní je denní část. Na západě je klidová část s ložnicí, koupelnou a šatnou. Do podkrovního pokoje vedou jedny normální schody, na východní půdu skládací.",
+      "body": [
+        "Vstup: nové dveře hned u výstupu ze schodiště z 1.NP do haly 2.05.",
+        "Denní část: obývák + kuchyň do krovu, WC 2.11 a pracovna 2.12.",
+        "Noční část: ložnice 2.02, hala se schody, šatna, koupelna, prádelna.",
+        "Podkroví: pokoj 3.01 přes celou západní část (vnitřní okno do obýváku), na východě půda (sklad) se skládacími schody.",
+        "9 střešních oken 78 × 118 cm, vikýře nad zadním traktem."
+      ],
+      "vykresy": "bim/varianty/V3/vykresy",
+      "mistnosti": "analysis/mistnosti_V3.json",
+      "poznamky": "bim/varianty/V3/V3_poznamky.md",
+      "pohledy": [
+        ["bim/varianty/V3/V3_pohled_obyvak.png", "Obývák do krovu, vnitřní okno podkrovního pokoje"],
+        ["bim/varianty/V3/V3_pohled_hala_schody.png", "Hala 2.03 se schody do podkroví"],
+        ["bim/varianty/V3/V3_pohled_podkrovi_pokoj.png", "Podkrovní pokoj 3.01, výstup schodů"]
+      ],
+      "blend": "blender/Prasklice_V3_rekonstrukce.blend",
+      "kolekce": "V3_Rekonstrukce",
+      "kolekce_navic": []
+    }
+  ]
+}
