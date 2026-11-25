@@ -1,52 +1,65 @@
 # Web – RD Prasklice
 
-A static website comparing the current state of the house with its reconstruction variants. It needs no server and no libraries.
+Statický web s porovnáním současného stavu domu a variant rekonstrukce. Nepotřebuje server ani žádné knihovny.
 
-## How to open it
+Online: https://jokekill.github.io/Prasklice/
 
-- Directly: double-click `web/index.html`.
-- Or through a local server, from the `E:\Prasklice` folder:
+## Jak web otevřít
+
+- Přímo: dvojklik na `web/index.html`.
+- Nebo přes lokální server ze složky `E:\Prasklice`:
   `py -m http.server 8765 --bind 127.0.0.1 --directory web`
-  Then open http://localhost:8765.
-- To share it, copy the whole `web/` folder (about 6 MB). Nothing else is needed.
+  a pak otevřít http://localhost:8765.
 
-## What is where
+## Zveřejnění (GitHub Pages)
 
-| File / folder | Contents |
+Složka `web/` je git repozitář `Jokekill/Prasklice`, GitHub Pages ho zveřejňují z větve `main`.
+Po přegenerování webu stačí ve složce `web/` spustit:
+```
+git add -A
+git commit -m "Aktualizace webu"
+git push
+```
+Asi za minutu je nová podoba online.
+
+## Co je kde
+
+| Soubor / složka | Obsah |
 |---|---|
-| `index.html`, `app.js`, `styl.css` | The site itself: overview, version pages, comparison, image viewer |
-| `verze.json` | **Texts for the versions** (name, date, summary, key points, which drawings and models to use). Edit this by hand. |
-| `data.js` | Generated data. **Do not edit by hand**; `scripts/20_web.py` overwrites it. |
-| `img/<version>/` | Drawings (`vykres_*.webp`), 3D renders (`ulice`, `dvur`, `rez_1np`, `rez_2np`, `rez_podkrovi`), interior views (`pohled_N`) |
-| `pdf/<version>/` | PDF drawings to download |
+| `index.html`, `app.js`, `styl.css` | Samotný web: přehled, stránky verzí, porovnání, prohlížeč obrázků |
+| `verze.json` | **Texty k verzím** (název, datum, shrnutí, hlavní body, které výkresy a modely použít). Upravuje se ručně. |
+| `data.js` | Vygenerovaná data. **Neupravovat ručně**, přepisuje ho `scripts/20_web.py`. |
+| `img/<verze>/` | Výkresy (`vykres_*.webp`), 3D rendery (`ulice`, `dvur`, `rez_1np`, `rez_2np`, `rez_podkrovi`), pohledy dovnitř (`pohled_N`) |
+| `pdf/<verze>/` | PDF výkresy ke stažení |
 
-## Adding a new version (for example V4)
+## Přidání nové verze (např. V4)
 
-1. Build the model and its drawings as with V3:
-   - drawings in `bim/varianty/V4/vykresy/` (SVG + PDF);
-   - rooms in `analysis/mistnosti_V4.json`;
-   - notes in `bim/varianty/V4/V4_poznamky.md`;
-   - interior views `V4_pohled_*.png`;
-   - model in `blender/Prasklice_V4_rekonstrukce.blend` with the collection `V4_Rekonstrukce`.
-2. Run the generator with renders:
+1. Vytvořit model a výkresy stejně jako u V3:
+   - výkresy do `bim/varianty/V4/vykresy/` (SVG + PDF);
+   - místnosti do `analysis/mistnosti_V4.json`;
+   - poznámky do `bim/varianty/V4/V4_poznamky.md`;
+   - pohledy dovnitř `V4_pohled_*.png`;
+   - model `blender/Prasklice_V4_rekonstrukce.blend` s kolekcí `V4_Rekonstrukce`.
+2. Spustit generátor i s rendery:
    ```
    uv run --no-project python scripts/20_web.py --rendery
    ```
-   The `V4` folder is picked up automatically, with default texts taken from the notes.
-3. Optional: in `verze.json`, fill in the V4 summary and key points (copy the V3 entry), then run the generator again without `--rendery`.
+   Složka `V4` se přidá automaticky, výchozí texty se vezmou z poznámek.
+3. Volitelně doplnit ve `verze.json` shrnutí a hlavní body V4 (zkopírovat záznam V3) a spustit generátor znovu bez `--rendery`.
+4. Zveřejnit (viz výše).
 
-Version colours are predefined in `styl.css` up to V6 (`--c-V4` …). For more versions, add another line there.
+Barvy verzí jsou ve `styl.css` připravené až do V6 (`--c-V4` …). Pro další verze stačí přidat řádek.
 
-## Scripts
+## Skripty
 
-- `scripts/20_web.py` builds the website:
-  - drawings SVG → PNG (headless Edge) → cropped WebP;
-  - PDF copies;
-  - room areas;
-  - notes;
+- `scripts/20_web.py` sestaví web:
+  - výkresy SVG → PNG (headless Edge) → oříznuté WebP;
+  - kopie PDF;
+  - plochy místností;
+  - poznámky;
   - `data.js`.
-  It skips images that are already up to date.
-- `scripts/b13_web_rendery.py` makes the 3D images of a version in Blender (street, courtyard, and floor-by-floor cuts without the roof).
-- `scripts/b14_web_obrazky.py` crops white margins and converts to WebP (in Blender, using numpy).
+  Obrázky, které jsou aktuální, přeskočí.
+- `scripts/b13_web_rendery.py` vytvoří v Blenderu 3D obrázky verze (z ulice, ze dvora, řezy po podlažích bez střechy).
+- `scripts/b14_web_obrazky.py` ořízne bílé okraje a převede obrázky na WebP (v Blenderu, přes numpy).
 
-Blender is always run in the normal way, **never with `--factory-startup`**.
+Blender se vždy spouští normálně, **nikdy s `--factory-startup`**.
