@@ -9,7 +9,8 @@
   const col = v => `var(--c-${v.id}, #888)`;
   const dot = v => `<i class="dot" style="background:${col(v)}"></i>`;
   const byId = id => V.find(v => v.id === id);
-  const sum = rs => rs.reduce((a, r) => a + r.a, 0);
+  const inc = rs => rs.filter(r => !r.mimo);                       // místnosti započítané do součtů
+  const sum = rs => inc(rs).reduce((a, r) => a + r.a, 0);
   const floorOf = (v, kod) => (v.patra || []).find(p => p.kod === kod);
 
   $("#projekt").textContent = W.projekt || "RD Prasklice";
@@ -47,11 +48,16 @@
     for (const st of sts) {
       const rs = rooms.filter(r => r.st === st);
       if (sts.length > 1) body += `<tr class="st"><td colspan="4">${esc(W.podlazi[st] || st)} · podlaha ${r0(rs[0].z)}</td></tr>`;
-      body += rs.map(r => `<tr><td class="c">${esc(r.c)}</td><td>${esc(r.n)}</td><td class="n">${num(r.a, 2)}</td><td class="n">${vyska(r)}</td></tr>`).join("");
+      body += rs.map(r => r.mimo
+        ? `<tr class="mimo" title="${esc(r.mimo)}"><td class="c">${esc(r.c)}</td><td>${esc(r.n)} <span class="tag">mimo součty</span></td><td class="n">(${num(r.a, 2)})</td><td class="n">${vyska(r)}</td></tr>`
+        : `<tr><td class="c">${esc(r.c)}</td><td>${esc(r.n)}</td><td class="n">${num(r.a, 2)}</td><td class="n">${vyska(r)}</td></tr>`).join("");
     }
+    const mimo = rooms.filter(r => r.mimo);
     return `<table class="rooms"><thead><tr><th>Č.</th><th>Místnost</th><th class="n">m²</th><th class="n">Výška</th></tr></thead>
-      <tbody>${body}</tbody><tfoot><tr><td></td><td>Celkem ${rooms.length} místností</td><td class="n">${num(sum(rooms), 2)}</td><td></td></tr></tfoot></table>`;
+      <tbody>${body}</tbody><tfoot><tr><td></td><td>Celkem ${mist(inc(rooms).length)}${mimo.length ? " (bez " + mimo.map(r => esc(r.c)).join(", ") + ")" : ""}</td><td class="n">${num(sum(rooms), 2)}</td><td></td></tr></tfoot></table>
+      ${mimo.map(r => `<p class="mimo-note"><b>${esc(r.c)} ${esc(r.n)}:</b> ${esc(r.mimo)}</p>`).join("")}`;
   }
+  const mist = n => `${n} ${n === 1 ? "místnost" : n >= 2 && n <= 4 ? "místnosti" : "místností"}`;
   const r0 = z => (z >= 0 ? "+" : "−") + num(Math.abs(z), 2);
   function vyska(r) {
     if (/do krovu/i.test(r.n)) return "do krovu";
@@ -60,8 +66,8 @@
   }
 
   function statsOf(v) {
-    const np2 = (v.mistnosti || []).filter(r => r.st === "NP2");
-    const pu = (v.mistnosti || []).filter(r => r.st === "PUDA");
+    const np2 = inc(v.mistnosti || []).filter(r => r.st === "NP2");
+    const pu = inc(v.mistnosti || []).filter(r => r.st === "PUDA");
     return { np2: sum(np2), npn: np2.length, pu: sum(pu), pun: pu.length };
   }
 
@@ -112,12 +118,13 @@
       ["Podkroví – počet místností", v => cnt(v, ["PUDA"])],
       ["2.NP + podkroví celkem", v => ar(v, ["NP2", "PUDA"])],
     ];
-    function ar(v, sts) { const rs = v.mistnosti.filter(r => sts.includes(r.st)); return rs.length ? num(sum(rs), 1) + " m²" : "–"; }
-    function cnt(v, sts) { const n = v.mistnosti.filter(r => sts.includes(r.st)).length; return n || "–"; }
+    function ar(v, sts) { const rs = inc(v.mistnosti).filter(r => sts.includes(r.st)); return rs.length ? num(sum(rs), 1) + " m²" : "–"; }
+    function cnt(v, sts) { const n = inc(v.mistnosti).filter(r => sts.includes(r.st)).length; return n || "–"; }
     return `<table class="sum"><thead><tr><th></th>${vs.map(v => `<th>${dot(v)} ${esc(v.nazev)}</th>`).join("")}</tr></thead>
       <tbody>${rows.map(([t, f]) => `<tr><td>${t}</td>${vs.map(v => `<td>${f(v)}</td>`).join("")}</tr>`).join("")}</tbody></table>
       <p class="muted" style="margin:10px 0 0;font-size:13px">Podkroví: půdorysná plocha včetně míst pod šikmou střechou (plocha s výškou ≥ 1,9 m je menší, viz poznámky k verzi).
-      Otvory pro schody a volný prostor do krovu se do podkroví nepočítají.</p>`;
+      Otvory pro schody a volný prostor do krovu se do podkroví nepočítají.
+      ${Object.entries(W.mimo_soucty || {}).map(([c, t]) => `<br>Místnost ${esc(c)} se do žádného součtu nepočítá: ${esc(t)}`).join("")}</p>`;
   }
 
   // ---------------------------------------------------------------- stránka verze
@@ -200,7 +207,7 @@
       else if (mode === "3d") { src = v.rendery[rz]; title = "3D řez"; transp = true; }
       else if (fl && fl.vykres) { src = fl.vykres.src; title = `${fl.vykres.kod} ${fl.vykres.nazev}`; pdf = fl.vykres.pdf; if (fl.zdedeno) note = "Beze změny – výkres současného stavu."; }
       const idx = src ? items.push({ src, title: `${v.nazev} – ${title}`, sub: note, pdf, transp }) - 1 : -1;
-      const area = fl ? `${num(sum(fl.mistnosti), 1)} m² · ${fl.mistnosti.length} míst.` : "";
+      const area = fl ? `${num(sum(fl.mistnosti), 1)} m² · ${inc(fl.mistnosti).length} míst.` : "";
       return { v, src, idx, note, area, transp };
     });
     const g = newGroup(items);

@@ -1,6 +1,9 @@
 {
   "projekt": "RD Prasklice",
   "podtitul": "Rekonstrukce patra a podkroví – přehled variant",
+  "mimo_soucty": {
+    "N.01": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
+  },
   "verze": [
     {
       "id": "stav",
@@ -21,7 +24,9 @@
       "pohledy": [],
       "blend": "blender/Prasklice_bim.blend",
       "kolekce": "Stavajici_stav",
-      "kolekce_navic": ["Objekt_k_demolici"]
+      "kolekce_navic": [
+        "Objekt_k_demolici"
+      ]
     },
     {
       "id": "V1",
@@ -40,7 +45,12 @@
       "vykresy": "bim/varianty/V1/vykresy",
       "mistnosti": "analysis/mistnosti_V1.json",
       "poznamky": "bim/varianty/V1/V1_poznamky.md",
-      "pohledy": [["bim/varianty/V1/V1_pohled_obyvak.png", "Obývák s lávkou pod hřebenem"]],
+      "pohledy": [
+        [
+          "bim/varianty/V1/V1_pohled_obyvak.png",
+          "Obývák s lávkou pod hřebenem"
+        ]
+      ],
       "blend": "blender/Prasklice_V1_rekonstrukce.blend",
       "kolekce": "V1_Rekonstrukce",
       "kolekce_navic": []
@@ -62,9 +72,18 @@
       "mistnosti": "analysis/mistnosti_V2.json",
       "poznamky": "bim/varianty/V2/V2_poznamky.md",
       "pohledy": [
-        ["bim/varianty/V2/V2_pohled_obyvak.png", "Obývák do krovu"],
-        ["bim/varianty/V2/V2_pohled_ochoz_zapad.png", "Ochoz a podkroví z obýváku"],
-        ["bim/varianty/V2/V2_pohled_podkrovi_zapad.png", "Vstup do západního podkrovního pokoje"]
+        [
+          "bim/varianty/V2/V2_pohled_obyvak.png",
+          "Obývák do krovu"
+        ],
+        [
+          "bim/varianty/V2/V2_pohled_ochoz_zapad.png",
+          "Ochoz a podkroví z obýváku"
+        ],
+        [
+          "bim/varianty/V2/V2_pohled_podkrovi_zapad.png",
+          "Vstup do západního podkrovního pokoje"
+        ]
       ],
       "blend": "blender/Prasklice_V2_rekonstrukce.blend",
       "kolekce": "V2_Rekonstrukce",
@@ -88,9 +107,18 @@
       "mistnosti": "analysis/mistnosti_V3.json",
       "poznamky": "bim/varianty/V3/V3_poznamky.md",
       "pohledy": [
-        ["bim/varianty/V3/V3_pohled_obyvak.png", "Obývák do krovu, vnitřní okno podkrovního pokoje"],
-        ["bim/varianty/V3/V3_pohled_hala_schody.png", "Hala 2.03 se schody do podkroví"],
-        ["bim/varianty/V3/V3_pohled_podkrovi_pokoj.png", "Podkrovní pokoj 3.01, výstup schodů"]
+        [
+          "bim/varianty/V3/V3_pohled_obyvak.png",
+          "Obývák do krovu, vnitřní okno podkrovního pokoje"
+        ],
+        [
+          "bim/varianty/V3/V3_pohled_hala_schody.png",
+          "Hala 2.03 se schody do podkroví"
+        ],
+        [
+          "bim/varianty/V3/V3_pohled_podkrovi_pokoj.png",
+          "Podkrovní pokoj 3.01, výstup schodů"
+        ]
       ],
       "blend": "blender/Prasklice_V3_rekonstrukce.blend",
       "kolekce": "V3_Rekonstrukce",

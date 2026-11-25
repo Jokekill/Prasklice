@@ -2,7 +2,10 @@
 window.WEB = {
  "projekt": "RD Prasklice",
  "podtitul": "Rekonstrukce patra a podkroví – přehled variant",
- "generovano": "25. 11. 2026 12:35",
+ "mimo_soucty": {
+  "N.01": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
+ },
+ "generovano": "25. 11. 2026 12:51",
  "podlazi": {
   "SK": "Sklep",
   "PR": "Průjezd",
@@ -191,7 +194,8 @@ window.WEB = {
      "st": "NADPR",
      "a": 24.38,
      "h": 2.62,
-     "z": 2.6
+     "z": 2.6,
+     "mimo": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
     },
     {
      "c": "2.01",
@@ -353,7 +357,8 @@ window.WEB = {
        "st": "NADPR",
        "a": 24.38,
        "h": 2.62,
-       "z": 2.6
+       "z": 2.6,
+       "mimo": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
       },
       {
        "c": "2.01",
@@ -535,7 +540,8 @@ window.WEB = {
      "st": "NADPR",
      "a": 24.38,
      "h": 2.62,
-     "z": 2.6
+     "z": 2.6,
+     "mimo": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
     },
     {
      "c": "2.01",
@@ -753,7 +759,8 @@ window.WEB = {
        "st": "NADPR",
        "a": 24.38,
        "h": 2.62,
-       "z": 2.6
+       "z": 2.6,
+       "mimo": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
       },
       {
        "c": "2.01",
@@ -1017,7 +1024,8 @@ window.WEB = {
      "st": "NADPR",
      "a": 24.38,
      "h": 2.62,
-     "z": 2.6
+     "z": 2.6,
+     "mimo": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
     },
     {
      "c": "2.01",
@@ -1283,7 +1291,8 @@ window.WEB = {
        "st": "NADPR",
        "a": 24.38,
        "h": 2.62,
-       "z": 2.6
+       "z": 2.6,
+       "mimo": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
       },
       {
        "c": "2.01",
@@ -1596,7 +1605,8 @@ window.WEB = {
      "st": "NADPR",
      "a": 24.38,
      "h": 2.62,
-     "z": 2.6
+     "z": 2.6,
+     "mimo": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
     },
     {
      "c": "2.01",
@@ -1862,7 +1872,8 @@ window.WEB = {
        "st": "NADPR",
        "a": 24.38,
        "h": 2.62,
-       "z": 2.6
+       "z": 2.6,
+       "mimo": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
       },
       {
        "c": "2.01",
