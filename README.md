@@ -64,4 +64,6 @@ Barvy verzí jsou ve `styl.css` připravené až do V6 (`--c-V4` …). Pro dalš
 - `scripts/b13_web_rendery.py` vytvoří v Blenderu 3D obrázky verze (z ulice, ze dvora, řezy po podlažích bez střechy).
 - `scripts/b14_web_obrazky.py` ořízne bílé okraje a převede obrázky na WebP (v Blenderu, přes numpy).
 
+Krov (vazné trámy, kleštiny, zadní vaznice se sloupky) je změřený ve skenu (`scripts/21_tramy*.py`, `analysis/mereni.md`) a staví ho `b02` do podkolekce `*_Krov`, takže je ve všech modelech. Po změně je nutné přegenerovat všechny modely (b02 → b06/b08/b11/b15/b18 s IFC skripty).
+
 Blender se vždy spouští normálně, **nikdy s `--factory-startup`**.

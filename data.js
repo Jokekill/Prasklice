@@ -6,7 +6,7 @@ window.WEB = {
   "N.01": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch.",
   "V4:3.01": "Studená nevytápěná půda (jen sklad, skládací schody) – není obytná plocha."
  },
- "generovano": "25. 11. 2026 15:47",
+ "generovano": "25. 11. 2026 16:07",
  "podlazi": {
   "SK": "Sklep",
   "PR": "Průjezd",
@@ -27,7 +27,8 @@ window.WEB = {
     "Přízemí: pokoje A, B, D, chodba a pět místností v zadním traktu, průjezd / garáž a sklep.",
     "2.NP: jeden prostor 2.01 se světlou výškou asi 2,19 m pod hliněným stropem.",
     "Půda: podlaha +5,32, pod hřebenem asi 2,98 m.",
-    "Nad zadním traktem je nízká pultová střecha."
+    "Nad zadním traktem je nízká pultová střecha.",
+    "Krov (změřeno ve skenu): krokve po 1 m, každá 4. vazba má vazný trám 16/20 cm (x ≈ 4,0 / 8,1 / 12,1 / 16,0 / 19,9) ve výšce +5,45 až +5,65. Pod hřebenem jsou kleštiny, v zadním traktu podélná vaznice (+4,64) na 2 sloupcích."
    ],
    "vykresy": [
     {
@@ -398,7 +399,8 @@ window.WEB = {
     "2.01 kuchyň + obývák (31,6 m²) do krovu, pod hřebenem 5,27 m.",
     "Na západě pokoj 2.02 a předsíň / šatna 2.03, na východě pokoj 2.04 a koupelna 2.05.",
     "Půda slouží jako úložný prostor nebo na spaní (≥ 1,9 m jen v pásu asi 1,5 m u hřebene).",
-    "Schodiště z 1.NP do patra v této variantě není."
+    "Schodiště z 1.NP do patra v této variantě není.",
+    "Krov: nový strop +5,53 je o 8 cm výš než spodek vazných trámů (+5,45). Trámy x ≈ 8,1 a 16,0 by zůstaly vidět v pokojích, trám x ≈ 12,1 vede obývákem 2,42 m nad podlahou. Je nutné strop snížit, nebo trámy nahradit."
    ],
    "vykresy": [
     {
@@ -856,7 +858,8 @@ window.WEB = {
     "Podkroví: pokoj 3.01 (západ, 18,8 m²) a menší pokoj 3.04 (východ, 14,6 m²), ochozy 3.02 a 3.03.",
     "Dvě vřetenová schodiště D 1,50 v předsíních 2.03 a 2.05.",
     "Zadní trakt pod vikýři: místnost, koupelna, technická místnost, chodba a schodiště z 1.NP.",
-    "8 střešních oken 78 × 118 cm."
+    "8 střešních oken 78 × 118 cm.",
+    "Krov: vazné trámy jsou 2,42 m nad podlahou 2.NP, nový strop +5,53 jimi prochází. Zadní vaznice (+4,64) je jen 1,61 m nad podlahou zadního traktu a sloupky stojí v koupelně a v technické místnosti, takže pod vikýři se musí nahradit."
    ],
    "vykresy": [
     {
@@ -1437,7 +1440,8 @@ window.WEB = {
     "Denní část: obývák + kuchyň do krovu, WC 2.11 a pracovna 2.12.",
     "Noční část: ložnice 2.02, hala se schody, šatna, koupelna, prádelna.",
     "Podkroví: pokoj 3.01 přes celou západní část (vnitřní okno do obýváku), na východě půda (sklad) se skládacími schody.",
-    "9 střešních oken 78 × 118 cm, vikýře nad zadním traktem."
+    "9 střešních oken 78 × 118 cm, vikýře nad zadním traktem.",
+    "Krov: vazné trámy jsou 2,42 m nad podlahou 2.NP, nový strop +5,53 jimi prochází. Zadní vaznice (+4,64) je jen 1,61 m nad podlahou zadního traktu a sloupky stojí v koupelně a v prádelně, takže pod vikýři se musí nahradit."
    ],
    "vykresy": [
     {
@@ -2018,7 +2022,8 @@ window.WEB = {
     "2.NP: ložnice se šatnou a předsíní, 2 dětské pokoje, pracovna, obývák s kuchyní (31,6 m²).",
     "Dvě koupelny (9,3 a 6,5 m²) a prádelna s technikou jsou na jedné stoupačce nad WC v 1.NP.",
     "Rovný strop 2,50 m, půda zůstává studená (sklad, skládací schody), zatepluje se jen strop.",
-    "Okna do ulice v 2.NP jsou vyšší (0,90 × 1,52 m), ve vikýřích jsou velká okna do dvora."
+    "Okna do ulice v 2.NP jsou vyšší (0,90 × 1,52 m), ve vikýřích jsou velká okna do dvora.",
+    "Krov: rovný strop +5,53 je o 8 cm výš než spodek vazných trámů (+5,45). Strop dát pod trámy (světlá výška 2,42 m), nebo trámy zapustit. Zadní vaznice (+4,64) je 1,61 m nad podlahou zadního traktu a sloupky stojí v koupelně 1 a v prádelně, takže pod vikýři se musí nahradit."
    ],
    "vykresy": [
     {
@@ -2607,7 +2612,8 @@ window.WEB = {
     "Do ulice: pokoj 12,6 m², pracovna 10,6 m², obývák 19,8 m² a kuchyně s jídelnou 30,6 m² (obývák s kuchyní jsou jeden prostor). Podél podélné zdi je chodba se skříněmi.",
     "Zadní trakt má podlahu na stávajícím stropě (+2,71), bez vikýřů. Jsou v něm 2 pokoje se 3 střešními okny, koupelna 11,2 m², technická místnost s WC a chodba se schodištěm z 1.NP.",
     "Pokoj nad průjezdem (24,4 m²) je ve výkresu jako ložnice. Dostane novou podlahu na úrovni 2.NP a dveře z chodby.",
-    "K ověření: statika krovu po odstranění stropu, rozdíl podlah 0,32 m mezi trakty, nízký zadní trakt (u zadní stěny asi 1,2 m), světlo v obýváku."
+    "K ověření: statika krovu po odstranění stropu, rozdíl podlah 0,32 m mezi trakty, nízký zadní trakt (u zadní stěny asi 1,2 m), světlo v obýváku.",
+    "Krov: vazné trámy zůstávají a vedou otevřeným prostorem 2,42 m nad podlahou (obývák, kuchyně, pracovna, chodba, pokoj nad průjezdem). Zadní vaznice je jen 1,93 m nad podlahou zadního traktu a vede všemi zadními místnostmi, sloupky stojí v pokoji 2.13 a v technické místnosti."
    ],
    "vykresy": [
     {
