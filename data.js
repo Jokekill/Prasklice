@@ -3,9 +3,10 @@ window.WEB = {
  "projekt": "RD Prasklice",
  "podtitul": "Rekonstrukce patra a podkroví – přehled variant",
  "mimo_soucty": {
-  "N.01": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
+  "N.01": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch.",
+  "V4:3.01": "Studená nevytápěná půda (jen sklad, skládací schody) – není obytná plocha."
  },
- "generovano": "25. 11. 2026 12:51",
+ "generovano": "25. 11. 2026 13:46",
  "podlazi": {
   "SK": "Sklep",
   "PR": "Průjezd",
@@ -2000,6 +2001,595 @@ window.WEB = {
        "a": 27.3,
        "h": 2.55,
        "z": 5.75
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "V4",
+   "nazev": "Varianta 4",
+   "kratky": "V4",
+   "typ": "studie",
+   "datum": "25. 11. 2026",
+   "shrnuti": "Samostatný byt 4+kk s vlastním vstupem z ulice přes pokoj D. Dvě koupelny na jedné stoupačce, rovný strop a studená půda, tedy nejlevnější z variant.",
+   "body": [
+    "Vstup: okno pokoje 1.04 D se změní na dveře, z D se jde do 1.10 se schodištěm do 2.NP.",
+    "2.NP: ložnice se šatnou a předsíní, 2 dětské pokoje, pracovna, obývák s kuchyní (31,6 m²).",
+    "Dvě koupelny (9,3 a 6,5 m²) a prádelna s technikou jsou na jedné stoupačce nad WC v 1.NP.",
+    "Rovný strop 2,50 m, půda zůstává studená (sklad, skládací schody), zatepluje se jen strop.",
+    "Okna do ulice v 2.NP jsou vyšší (0,90 × 1,52 m), ve vikýřích jsou velká okna do dvora."
+   ],
+   "vykresy": [
+    {
+     "kod": "P02",
+     "nazev": "Půdorys 1.NP – návrh (nový vstup, schodiště)",
+     "src": "img/V4/vykres_P02.webp",
+     "pdf": "pdf/V4/V4_P02_Pudorys_1NP.pdf"
+    },
+    {
+     "kod": "P03",
+     "nazev": "Půdorys 2.NP – návrh (řez v +4,00)",
+     "src": "img/V4/vykres_P03.webp",
+     "pdf": "pdf/V4/V4_P03_Pudorys_2NP.pdf"
+    },
+    {
+     "kod": "P04",
+     "nazev": "Půdorys půdy – studená půda (řez v +6,50)",
+     "src": "img/V4/vykres_P04.webp",
+     "pdf": "pdf/V4/V4_P04_Pudorys_podkrovi.pdf"
+    },
+    {
+     "kod": "R01",
+     "nazev": "Příčný řez x = 12,00 – obývák, prádelna",
+     "src": "img/V4/vykres_R01.webp",
+     "pdf": "pdf/V4/V4_R01_Pricny_rez_x_12_0_obyvak_pradelna.pdf"
+    },
+    {
+     "kod": "R02",
+     "nazev": "Příčný řez x = 8,00 – ložnice, koupelna 1",
+     "src": "img/V4/vykres_R02.webp",
+     "pdf": "pdf/V4/V4_R02_Pricny_rez_x_8_0_loznice_otvor_koupelna_1.pdf"
+    },
+    {
+     "kod": "R03",
+     "nazev": "Podélný řez y = 9,00 – zadní trakt, koupelny",
+     "src": "img/V4/vykres_R03.webp",
+     "pdf": "pdf/V4/V4_R03_Podelny_rez_y_9_0_zadni_trakt_koupelny.pdf"
+    },
+    {
+     "kod": "R04",
+     "nazev": "Příčný řez x = 18,00 – vstup, schodiště, hala",
+     "src": "img/V4/vykres_R04.webp",
+     "pdf": "pdf/V4/V4_R04_Pricny_rez_x_18_0_vstup_schodiste_hala.pdf"
+    },
+    {
+     "kod": "V01",
+     "nazev": "Pohled uliční (jih) – nový vstup",
+     "src": "img/V4/vykres_V01.webp",
+     "pdf": "pdf/V4/V4_V01_Pohled_ulicni_jih_novy_vstup.pdf"
+    },
+    {
+     "kod": "V02",
+     "nazev": "Pohled dvorní (sever) – vikýře",
+     "src": "img/V4/vykres_V02.webp",
+     "pdf": "pdf/V4/V4_V02_Pohled_dvorni_sever_vikyre.pdf"
+    }
+   ],
+   "pohledy": [
+    {
+     "src": "img/V4/pohled_1.webp",
+     "nazev": "Obývák s kuchyní, rovný strop, zvětšená okna do ulice"
+    },
+    {
+     "src": "img/V4/pohled_2.webp",
+     "nazev": "Nový vstup do bytu (1.04): dveře do 1.10 ke schodišti"
+    },
+    {
+     "src": "img/V4/pohled_3.webp",
+     "nazev": "Hala 2.06: vstup od schodiště, skládací schody na půdu"
+    }
+   ],
+   "mistnosti": [
+    {
+     "c": "0.01",
+     "n": "Sklep",
+     "st": "SK",
+     "a": 14.31,
+     "h": 1.98,
+     "z": -2.36
+    },
+    {
+     "c": "P.01",
+     "n": "Průjezd / garáž",
+     "st": "PR",
+     "a": 23.12,
+     "h": 3.53,
+     "z": -1.23
+    },
+    {
+     "c": "1.01",
+     "n": "Pokoj A",
+     "st": "NP1",
+     "a": 24.08,
+     "h": 2.72,
+     "z": 0.0
+    },
+    {
+     "c": "1.02",
+     "n": "Pokoj B",
+     "st": "NP1",
+     "a": 30.31,
+     "h": 2.72,
+     "z": 0.0
+    },
+    {
+     "c": "1.03",
+     "n": "Chodba",
+     "st": "NP1",
+     "a": 12.82,
+     "h": 2.72,
+     "z": 0.0
+    },
+    {
+     "c": "1.04",
+     "n": "Vstup do bytu",
+     "st": "NP1",
+     "a": 13.85,
+     "h": 2.72,
+     "z": 0.0
+    },
+    {
+     "c": "1.06",
+     "n": "Zadní trakt 1",
+     "st": "NP1",
+     "a": 16.02,
+     "h": 2.44,
+     "z": 0.0
+    },
+    {
+     "c": "1.07",
+     "n": "Zadní trakt 2",
+     "st": "NP1",
+     "a": 5.42,
+     "h": 2.44,
+     "z": 0.0
+    },
+    {
+     "c": "1.08",
+     "n": "Zadní trakt 3",
+     "st": "NP1",
+     "a": 8.49,
+     "h": 2.44,
+     "z": 0.0
+    },
+    {
+     "c": "1.08a",
+     "n": "WC",
+     "st": "NP1",
+     "a": 2.1,
+     "h": 2.44,
+     "z": 0.0
+    },
+    {
+     "c": "1.09",
+     "n": "Zadní trakt 4",
+     "st": "NP1",
+     "a": 16.55,
+     "h": 2.44,
+     "z": 0.0
+    },
+    {
+     "c": "1.10",
+     "n": "Schodiště",
+     "st": "NP1",
+     "a": 14.71,
+     "h": 2.44,
+     "z": 0.0
+    },
+    {
+     "c": "N.01",
+     "n": "Místnost nad průjezdem",
+     "st": "NADPR",
+     "a": 24.38,
+     "h": 2.62,
+     "z": 2.6,
+     "mimo": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
+    },
+    {
+     "c": "2.01",
+     "n": "Schodiště",
+     "st": "NP2",
+     "a": 11.76,
+     "h": 2.77,
+     "z": 3.03
+    },
+    {
+     "c": "2.02",
+     "n": "Ložnice",
+     "st": "NP2",
+     "a": 14.74,
+     "h": 2.5,
+     "z": 3.03
+    },
+    {
+     "c": "2.03",
+     "n": "Předsíň ložnice",
+     "st": "NP2",
+     "a": 6.63,
+     "h": 2.5,
+     "z": 3.03
+    },
+    {
+     "c": "2.04",
+     "n": "Šatna",
+     "st": "NP2",
+     "a": 6.35,
+     "h": 2.5,
+     "z": 3.03
+    },
+    {
+     "c": "2.05",
+     "n": "Obývací pokoj + kuchyň",
+     "st": "NP2",
+     "a": 31.56,
+     "h": 2.5,
+     "z": 3.03
+    },
+    {
+     "c": "2.06",
+     "n": "Hala",
+     "st": "NP2",
+     "a": 12.2,
+     "h": 2.5,
+     "z": 3.03
+    },
+    {
+     "c": "2.07",
+     "n": "Pokoj",
+     "st": "NP2",
+     "a": 14.51,
+     "h": 2.5,
+     "z": 3.03
+    },
+    {
+     "c": "2.08",
+     "n": "Pokoj",
+     "st": "NP2",
+     "a": 11.13,
+     "h": 2.54,
+     "z": 3.03
+    },
+    {
+     "c": "2.09",
+     "n": "Koupelna 2",
+     "st": "NP2",
+     "a": 6.5,
+     "h": 2.54,
+     "z": 3.03
+    },
+    {
+     "c": "2.10",
+     "n": "Chodba",
+     "st": "NP2",
+     "a": 9.7,
+     "h": 2.77,
+     "z": 3.03
+    },
+    {
+     "c": "2.11",
+     "n": "Koupelna 1",
+     "st": "NP2",
+     "a": 9.26,
+     "h": 2.54,
+     "z": 3.03
+    },
+    {
+     "c": "2.12",
+     "n": "Prádelna + technika",
+     "st": "NP2",
+     "a": 8.44,
+     "h": 2.54,
+     "z": 3.03
+    },
+    {
+     "c": "2.13",
+     "n": "Pracovna",
+     "st": "NP2",
+     "a": 7.19,
+     "h": 2.54,
+     "z": 3.03
+    },
+    {
+     "c": "3.01",
+     "n": "Půda – sklad",
+     "st": "PUDA",
+     "a": 88.99,
+     "h": 2.31,
+     "z": 5.99,
+     "mimo": "Studená nevytápěná půda (jen sklad, skládací schody) – není obytná plocha."
+    }
+   ],
+   "poznamky": "<h2>Rekonstrukce – varianta 4 (studie): samostatný byt 4+kk s vlastním vstupem, dvě koupelny, úsporné řešení</h2>\n<p>Výšky jsou od podlahy přízemí (±0,000). Podlaha 2.NP je +3,03, nový rovný strop je +5,53 (světlá výška 2,50 m).</p>\n<h3>Myšlenka</h3>\n<ul><li>\n<strong>Vlastní vstup z ulice:</strong> okno pokoje 1.04 D se změní na dveře, takže stačí vybourat parapet; šířka 1,00 m i nadpraží zůstanou.\n</li><li>\n<strong>Cesta nahoru:</strong> z 1.04 (vstup do bytu, místo na botník a věšáky) se jde novými dveřmi v podélné zdi do 1.10. V 1.10 je schodiště do 2.NP na stejném místě jako ve V2 a V3 (17 × 178 mm).\n</li><li>\n<strong>2.NP je ucelený byt 4+kk:</strong> ložnice, 2 dětské pokoje, pracovna, obývák s kuchyní, 2 koupelny, prádelna. Lze ho užívat jako druhou domácnost (dvougenerační dům), pronajmout, nebo nechat propojený s přízemím: dveře z chodby 1.03 do 1.04 zůstávají.\n</li><li>\n<strong>Rozdělení:</strong>\n<ul><li>\nu vstupu (východ) jsou děti: pokoje 2.07 a 2.08 a jejich koupelna 2;\n</li><li>\nuprostřed je denní část: obývák s kuchyní 2.05;\n</li><li>\nna západě jsou rodiče: ložnice, šatna, koupelna 1, pracovna a prádelna. Nikdo jimi neprochází.\n</li></ul>\n</li><li>\n<strong>Úspora:</strong> půda zůstává studená a nevytápěná. Podkroví se nezatepluje ani neobytňuje, zateplí se jen nový rovný strop.\n</li></ul>\n<h3>1.NP</h3>\n<ul><li>\n<strong>1.04 Vstup do bytu</strong> (13,8 m²): nové vstupní dveře 1,00 × 2,45 z ulice a nové dveře 0,85 × 2,10 do 1.10 (v podélné nosné zdi, nutný překlad). Dveře do chodby 1.03 zůstávají, lze je zamknout nebo zazdít.\n</li><li>\n<strong>1.10 Schodiště</strong> (14,7 m²):\n<ul><li>\nschodiště podél východní zdi, nástup u zadní zdi (místo u paty 0,8–0,9 m), výstup u podélné zdi;\n</li><li>\npod horní částí schodiště je úložný prostor (např. kola, sezónní věci);\n</li><li>\ndveře z 1.09 lze nechat (propojení) nebo zrušit.\n</li></ul>\n</li><li>\nPřízemí jinak beze změny.\n</li></ul>\n<h3>2.NP – hlavní trakt (rovný strop, 2,50 m)</h3>\n<ul><li>\n<strong>2.05 Obývací pokoj + kuchyň</strong> (31,6 m²):\n<ul><li>\nkuchyňská linka podél podélné zdi s ostrůvkem; odpad z dřezu jde prostupem podélnou zdí do podlahy chodby 2.10 ke společné stoupačce;\n</li><li>\ndveře do haly 2.06 (k dětem) a do předsíně 2.03 (k rodičům).\n</li></ul>\n</li><li>\n<strong>2.06 Hala</strong> (12,2 m²): sem se vchází od schodiště novými dveřmi v podélné zdi (x 17,45–18,30). Je tu šatní skříň a skládací půdní schody (poklop 120 × 70 cm, sklon asi 60°).\n</li><li>\n<strong>2.07 Pokoj</strong> (14,5 m², 2 okna do ulice).\n</li><li>\n<strong>2.02 Ložnice</strong> (14,7 m², 2 okna do ulice), <strong>2.03 Předsíň ložnice</strong> (6,6 m²), <strong>2.04 Šatna</strong> (6,4 m², šatna typu walk-in).\n</li><li>\n<strong>Z předsíně 2.03</strong> se stávajícím otvorem v podélné zdi (x 8,56–9,42, dnes 1,92 m vysoký → zvýšit na 2,10) jde do zadní chodby 2.10 ke koupelně 1, pracovně a prádelně.\n</li><li>\n<strong>Okna do ulice v 2.NP jsou zvětšená:</strong> šířka 0,90 m a osy zůstávají, parapet je 0,50 m nad podlahou, nadpraží +5,05 (pod římsou). Vychází 0,90 × 1,52 m místo 0,90 × 0,70 m, tedy víc než dvakrát víc světla. <strong>Ověřit na stavebním úřadě</strong> (změna uliční fasády).\n</li></ul>\n<h3>2.NP – zadní trakt (vikýře, 2,4–2,8 m)</h3>\n<ul><li>\n<strong>Dvě koupelny, obě na jedné stoupačce</strong> nad stávajícím WC v 1.NP (instalační stěna x 10,80):\n<ul><li>\n<strong>2.11 Koupelna 1</strong> (9,3 m², okno do dvora): vana, sprchový kout, 2 umyvadla, WC; u ložnicové části.\n</li><li>\n<strong>2.09 Koupelna 2</strong> (6,5 m², okno do dvora): sprcha, umyvadlo, WC; u dětských pokojů a hned u vstupu, takže slouží i hostům.\n<ul><li>\nOdpad vede v podlaze zadního traktu ke stejné stoupačce. Mezi stropem 1.NP (+2,68) a novou podlahou (+3,03) je dutina 0,35 m, takže rozvody se vejdou bez sekání a bez zásahu do přízemí.\n</li></ul>\n</li></ul>\n</li><li>\n<strong>2.12 Prádelna + technika</strong> (8,4 m², okno): pračka, sušička, vnitřní jednotka tepelného čerpadla se zásobníkem vody, rozvaděč a jednotka rekuperace. Sdílí instalační stěnu s koupelnou 1.\n</li><li>\n<strong>2.13 Pracovna</strong> (7,2 m², velké okno 1,60 × 1,50 do dvora), <strong>2.08 Pokoj</strong> (11,1 m², okno 2,35 × 1,50 do dvora).\n</li><li>\n<strong>2.10 Chodba</strong> (západ) a <strong>2.01 Schodiště</strong> s chodbou (východ) jsou u komína oddělené. Spojení vede přes obývák, takže rodiče mají klid.\n</li><li>\nVikýře jsou stejné jako ve V2/V3 (západ x 4,80–12,70, východ x 13,75–18,45, střecha 4°), okna jsou podle nových místností. Nad schodištěm z 1.NP je 1 střešní okno v pultové střeše.\n</li></ul>\n<h3>Půda (studená, nevytápěná)</h3>\n<ul><li>\n<strong>3.01 Půda – sklad</strong> (89 m²): přístup skládacími schody z haly 2.06. U poklopu je pochozí lávka z OSB, jinde je půda jen pro údržbu a sklad.\n</li><li>\n<strong>Zateplení je ve stropě nad 2.NP</strong> (asi 300 mm minerální vlny mezi a nad trámy, parozábrana pod ní). Střecha se jen opraví (krytina, laťování, pojistná fólie), nezatepluje se.\n</li><li>\n<strong>Rozvody rekuperace vedou v izolaci stropu na půdě</strong>, takže v bytě nejsou podhledy ani sekání.\n</li><li>\nPůdu je nutné větrat (větrací tašky, štíty).\n</li></ul>\n<h3>Proč je to levnější než V1–V3</h3>\n<ul><li>\nNezatepluje se šikmá střecha a není potřeba obytné podkroví: odpadá zateplení a obložení sklonů (asi 2× větší plocha než strop), parotěsná vrstva ve sklonu a vnitřní příčky v podkroví.\n</li><li>\nŽádná střešní okna kromě světlíku nad schodištěm (ve V3 jich bylo 9) a žádné schodiště do podkroví, jen skládací schody.\n</li><li>\nNebourá se do krovu: obývák není otevřený do krovu a vazné trámy zůstávají. Statika je jednodušší, stačí nový rovný strop.\n</li><li>\nVšechny mokré místnosti a kuchyň jsou u jedné stoupačky nad stávajícím WC a rozvody vedou v dutině podlahy zadního traktu.\n</li><li>\nVyužívá se stávající otvor v podélné zdi, schodiště z 1.NP je na stejném místě jako dřív a nové okno se nedělá ani do fasády. Vstupní dveře vzniknou z okna, bourá se jen parapet.\n</li><li>\nByt lze dělat najednou, bez zásahu do přízemí (kromě 1.04 a 1.10).\n</li></ul>\n<h3>Nutno ověřit</h3>\n<ul><li>\n<strong>Statika:</strong>\n<ul><li>\npřeklad nových dveří v podélné nosné zdi 1.NP (x 17,60–18,45) a 2.NP (x 17,45–18,30);\n</li><li>\nzvýšení stávajícího otvoru (x 8,56–9,42);\n</li><li>\nnové překlady zvětšených oken do ulice;\n</li><li>\nnové stropní trámy nad 2.NP (rozpětí asi 5,8 m mezi fasádou a podélnou zdí);\n</li><li>\nvýměna u otvoru schodiště;\n</li><li>\nnosnost podlahy zadního traktu pod koupelnou 1 (vana).\n</li></ul>\n</li><li>\n<strong>Dvě bytové jednotky:</strong> požární a akustické oddělení stropu nad 1.NP a schodiště. Pokud zůstane propojení s přízemím, jde o jeden byt a požadavky jsou mírnější.\n</li><li>\n<strong>Denní osvětlení obýváku</strong> (2 zvětšená okna do ulice). Případně se mezi obývák a halu dá prosklená příčka nebo prosklené dveře.\n</li><li>\n<strong>Úprava uliční fasády</strong> (nové vstupní dveře, vyšší okna) na stavebním úřadě.\n</li><li>\nSpodní líc střechy je odhad, zaměřit na místě. Výšky pod vikýři se po zateplení vikýřů sníží o 0,1–0,2 m.\n</li></ul>\n<h3>Soubory</h3>\n<ul><li>\n<strong>Blender:</strong> <code>blender\\Prasklice_V4_rekonstrukce.blend</code> (kolekce <code>V4_Rekonstrukce</code>).\n</li><li>\n<strong>IFC:</strong> <code>bim\\varianty\\V4\\Prasklice_V4_rekonstrukce.ifc</code>.\n</li><li>\n<strong>Výkresy (PDF a SVG):</strong> <code>bim\\varianty\\V4\\vykresy\\</code>\n<ul><li>\nP02 1.NP, P03 2.NP, P04 půda;\n</li><li>\nR01 x = 12, R02 x = 8, R03 y = 9 (zadní trakt), R04 x = 18 (vstup, schodiště);\n</li><li>\nV01 uliční pohled, V02 dvorní pohled.\n</li></ul>\n</li><li>\n<strong>Pohledy:</strong> <code>bim\\varianty\\V4\\V4_pohled_*.png</code>.\n</li><li>\n<strong>Skripty:</strong>\n<ul><li>\n<code>scripts\\b15_varianta4.py</code> (model; parametry jsou nahoře ve skriptu);\n</li><li>\n<code>scripts\\b16_varianta4_ifc_vykresy.py</code> (IFC a výkresy);\n</li><li>\n<code>scripts\\b17_varianta4_pohledy.py</code> (pohledy);\n</li><li>\npak <code>17_export_vykresy.py … V4</code> (PDF).\n</li></ul>\n</li></ul>",
+   "rendery": {
+    "ulice": "img/V4/ulice.webp",
+    "dvur": "img/V4/dvur.webp",
+    "rez_1np": "img/V4/rez_1np.webp",
+    "rez_2np": "img/V4/rez_2np.webp",
+    "rez_podkrovi": "img/V4/rez_podkrovi.webp"
+   },
+   "patra": [
+    {
+     "kod": "P01",
+     "nazev": "Sklep",
+     "vykres": {
+      "kod": "P01",
+      "nazev": "Půdorys sklepa (řez v −1,30)",
+      "src": "img/stav/vykres_P01.webp",
+      "pdf": "pdf/stav/P01_Pudorys_sklep.pdf"
+     },
+     "zdedeno": true,
+     "rez3d": null,
+     "mistnosti": [
+      {
+       "c": "0.01",
+       "n": "Sklep",
+       "st": "SK",
+       "a": 14.31,
+       "h": 1.98,
+       "z": -2.36
+      }
+     ]
+    },
+    {
+     "kod": "P02",
+     "nazev": "1.NP – přízemí",
+     "vykres": {
+      "kod": "P02",
+      "nazev": "Půdorys 1.NP – návrh (nový vstup, schodiště)",
+      "src": "img/V4/vykres_P02.webp",
+      "pdf": "pdf/V4/V4_P02_Pudorys_1NP.pdf"
+     },
+     "zdedeno": false,
+     "rez3d": "img/V4/rez_1np.webp",
+     "mistnosti": [
+      {
+       "c": "P.01",
+       "n": "Průjezd / garáž",
+       "st": "PR",
+       "a": 23.12,
+       "h": 3.53,
+       "z": -1.23
+      },
+      {
+       "c": "1.01",
+       "n": "Pokoj A",
+       "st": "NP1",
+       "a": 24.08,
+       "h": 2.72,
+       "z": 0.0
+      },
+      {
+       "c": "1.02",
+       "n": "Pokoj B",
+       "st": "NP1",
+       "a": 30.31,
+       "h": 2.72,
+       "z": 0.0
+      },
+      {
+       "c": "1.03",
+       "n": "Chodba",
+       "st": "NP1",
+       "a": 12.82,
+       "h": 2.72,
+       "z": 0.0
+      },
+      {
+       "c": "1.04",
+       "n": "Vstup do bytu",
+       "st": "NP1",
+       "a": 13.85,
+       "h": 2.72,
+       "z": 0.0
+      },
+      {
+       "c": "1.06",
+       "n": "Zadní trakt 1",
+       "st": "NP1",
+       "a": 16.02,
+       "h": 2.44,
+       "z": 0.0
+      },
+      {
+       "c": "1.07",
+       "n": "Zadní trakt 2",
+       "st": "NP1",
+       "a": 5.42,
+       "h": 2.44,
+       "z": 0.0
+      },
+      {
+       "c": "1.08",
+       "n": "Zadní trakt 3",
+       "st": "NP1",
+       "a": 8.49,
+       "h": 2.44,
+       "z": 0.0
+      },
+      {
+       "c": "1.08a",
+       "n": "WC",
+       "st": "NP1",
+       "a": 2.1,
+       "h": 2.44,
+       "z": 0.0
+      },
+      {
+       "c": "1.09",
+       "n": "Zadní trakt 4",
+       "st": "NP1",
+       "a": 16.55,
+       "h": 2.44,
+       "z": 0.0
+      },
+      {
+       "c": "1.10",
+       "n": "Schodiště",
+       "st": "NP1",
+       "a": 14.71,
+       "h": 2.44,
+       "z": 0.0
+      }
+     ]
+    },
+    {
+     "kod": "P03",
+     "nazev": "2.NP – patro",
+     "vykres": {
+      "kod": "P03",
+      "nazev": "Půdorys 2.NP – návrh (řez v +4,00)",
+      "src": "img/V4/vykres_P03.webp",
+      "pdf": "pdf/V4/V4_P03_Pudorys_2NP.pdf"
+     },
+     "zdedeno": false,
+     "rez3d": "img/V4/rez_2np.webp",
+     "mistnosti": [
+      {
+       "c": "N.01",
+       "n": "Místnost nad průjezdem",
+       "st": "NADPR",
+       "a": 24.38,
+       "h": 2.62,
+       "z": 2.6,
+       "mimo": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
+      },
+      {
+       "c": "2.01",
+       "n": "Schodiště",
+       "st": "NP2",
+       "a": 11.76,
+       "h": 2.77,
+       "z": 3.03
+      },
+      {
+       "c": "2.02",
+       "n": "Ložnice",
+       "st": "NP2",
+       "a": 14.74,
+       "h": 2.5,
+       "z": 3.03
+      },
+      {
+       "c": "2.03",
+       "n": "Předsíň ložnice",
+       "st": "NP2",
+       "a": 6.63,
+       "h": 2.5,
+       "z": 3.03
+      },
+      {
+       "c": "2.04",
+       "n": "Šatna",
+       "st": "NP2",
+       "a": 6.35,
+       "h": 2.5,
+       "z": 3.03
+      },
+      {
+       "c": "2.05",
+       "n": "Obývací pokoj + kuchyň",
+       "st": "NP2",
+       "a": 31.56,
+       "h": 2.5,
+       "z": 3.03
+      },
+      {
+       "c": "2.06",
+       "n": "Hala",
+       "st": "NP2",
+       "a": 12.2,
+       "h": 2.5,
+       "z": 3.03
+      },
+      {
+       "c": "2.07",
+       "n": "Pokoj",
+       "st": "NP2",
+       "a": 14.51,
+       "h": 2.5,
+       "z": 3.03
+      },
+      {
+       "c": "2.08",
+       "n": "Pokoj",
+       "st": "NP2",
+       "a": 11.13,
+       "h": 2.54,
+       "z": 3.03
+      },
+      {
+       "c": "2.09",
+       "n": "Koupelna 2",
+       "st": "NP2",
+       "a": 6.5,
+       "h": 2.54,
+       "z": 3.03
+      },
+      {
+       "c": "2.10",
+       "n": "Chodba",
+       "st": "NP2",
+       "a": 9.7,
+       "h": 2.77,
+       "z": 3.03
+      },
+      {
+       "c": "2.11",
+       "n": "Koupelna 1",
+       "st": "NP2",
+       "a": 9.26,
+       "h": 2.54,
+       "z": 3.03
+      },
+      {
+       "c": "2.12",
+       "n": "Prádelna + technika",
+       "st": "NP2",
+       "a": 8.44,
+       "h": 2.54,
+       "z": 3.03
+      },
+      {
+       "c": "2.13",
+       "n": "Pracovna",
+       "st": "NP2",
+       "a": 7.19,
+       "h": 2.54,
+       "z": 3.03
+      }
+     ]
+    },
+    {
+     "kod": "P04",
+     "nazev": "Podkroví / půda",
+     "vykres": {
+      "kod": "P04",
+      "nazev": "Půdorys půdy – studená půda (řez v +6,50)",
+      "src": "img/V4/vykres_P04.webp",
+      "pdf": "pdf/V4/V4_P04_Pudorys_podkrovi.pdf"
+     },
+     "zdedeno": false,
+     "rez3d": "img/V4/rez_podkrovi.webp",
+     "mistnosti": [
+      {
+       "c": "3.01",
+       "n": "Půda – sklad",
+       "st": "PUDA",
+       "a": 88.99,
+       "h": 2.31,
+       "z": 5.99,
+       "mimo": "Studená nevytápěná půda (jen sklad, skládací schody) – není obytná plocha."
       }
      ]
     }

@@ -48,6 +48,8 @@ Asi za minutu je nová podoba online.
 3. Volitelně doplnit ve `verze.json` shrnutí a hlavní body V4 (zkopírovat záznam V3) a spustit generátor znovu bez `--rendery`.
 4. Zveřejnit (viz výše).
 
+Místnosti, které se nemají počítat do součtů ploch, se zapisují do `verze.json` pod `mimo_soucty`: klíč `"N.01"` platí pro všechny verze, klíč `"V4:3.01"` jen pro jednu verzi.
+
 Barvy verzí jsou ve `styl.css` připravené až do V6 (`--c-V4` …). Pro další verze stačí přidat řádek.
 
 ## Skripty

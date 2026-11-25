@@ -2,7 +2,8 @@
   "projekt": "RD Prasklice",
   "podtitul": "Rekonstrukce patra a podkroví – přehled variant",
   "mimo_soucty": {
-    "N.01": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch."
+    "N.01": "Samostatný prostor nad průjezdem / garáží – bude vyžadovat úplně jiné řešení než zbytek domu, proto se nezapočítává do součtů ploch.",
+    "V4:3.01": "Studená nevytápěná půda (jen sklad, skládací schody) – není obytná plocha."
   },
   "verze": [
     {
@@ -122,6 +123,41 @@
       ],
       "blend": "blender/Prasklice_V3_rekonstrukce.blend",
       "kolekce": "V3_Rekonstrukce",
+      "kolekce_navic": []
+    },
+    {
+      "id": "V4",
+      "nazev": "Varianta 4",
+      "kratky": "V4",
+      "typ": "studie",
+      "datum": "25. 11. 2026",
+      "shrnuti": "Samostatný byt 4+kk s vlastním vstupem z ulice přes pokoj D. Dvě koupelny na jedné stoupačce, rovný strop a studená půda, tedy nejlevnější z variant.",
+      "body": [
+        "Vstup: okno pokoje 1.04 D se změní na dveře, z D se jde do 1.10 se schodištěm do 2.NP.",
+        "2.NP: ložnice se šatnou a předsíní, 2 dětské pokoje, pracovna, obývák s kuchyní (31,6 m²).",
+        "Dvě koupelny (9,3 a 6,5 m²) a prádelna s technikou jsou na jedné stoupačce nad WC v 1.NP.",
+        "Rovný strop 2,50 m, půda zůstává studená (sklad, skládací schody), zatepluje se jen strop.",
+        "Okna do ulice v 2.NP jsou vyšší (0,90 × 1,52 m), ve vikýřích jsou velká okna do dvora."
+      ],
+      "vykresy": "bim/varianty/V4/vykresy",
+      "mistnosti": "analysis/mistnosti_V4.json",
+      "poznamky": "bim/varianty/V4/V4_poznamky.md",
+      "pohledy": [
+        [
+          "bim/varianty/V4/V4_pohled_obyvak.png",
+          "Obývák s kuchyní, rovný strop, zvětšená okna do ulice"
+        ],
+        [
+          "bim/varianty/V4/V4_pohled_vstup_1NP.png",
+          "Nový vstup do bytu (1.04): dveře do 1.10 ke schodišti"
+        ],
+        [
+          "bim/varianty/V4/V4_pohled_hala.png",
+          "Hala 2.06: vstup od schodiště, skládací schody na půdu"
+        ]
+      ],
+      "blend": "blender/Prasklice_V4_rekonstrukce.blend",
+      "kolekce": "V4_Rekonstrukce",
       "kolekce_navic": []
     }
   ]

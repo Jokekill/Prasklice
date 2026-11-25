@@ -124,7 +124,8 @@
       <tbody>${rows.map(([t, f]) => `<tr><td>${t}</td>${vs.map(v => `<td>${f(v)}</td>`).join("")}</tr>`).join("")}</tbody></table>
       <p class="muted" style="margin:10px 0 0;font-size:13px">Podkroví: půdorysná plocha včetně míst pod šikmou střechou (plocha s výškou ≥ 1,9 m je menší, viz poznámky k verzi).
       Otvory pro schody a volný prostor do krovu se do podkroví nepočítají.
-      ${Object.entries(W.mimo_soucty || {}).map(([c, t]) => `<br>Místnost ${esc(c)} se do žádného součtu nepočítá: ${esc(t)}`).join("")}</p>`;
+      ${Object.entries(W.mimo_soucty || {}).map(([c, t]) => { const [vid, no] = c.includes(":") ? c.split(":") : [null, c];
+        return `<br>Místnost ${esc(no)}${vid && byId(vid) ? " (" + esc(byId(vid).nazev) + ")" : ""} se do součtů nepočítá: ${esc(t)}`; }).join("")}</p>`;
   }
 
   // ---------------------------------------------------------------- stránka verze
